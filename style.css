@@ -1,0 +1,119 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black base */
+  color: white;
+  text-align: center;
+
+  /* Hexagon Pattern Background */
+  background-image: 
+    linear-gradient(120deg, #111 12%, transparent 12.5%, transparent 87%, #111 87.5%, #111),
+    linear-gradient(60deg, #111 12%, transparent 12.5%, transparent 87%, #111 87.5%, #111),
+    linear-gradient(0deg, #111 12%, transparent 12.5%, transparent 87%, #111 87.5%, #111);
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px;
+}
+
+.container {
+  padding: 40px;
+}
+
+/* === Profile Image === */
+.profile-img {
+  width: 250px;        
+  height: 250px;       
+  object-fit: cover;   
+  border-radius: 50%;  
+  border: 4px solid #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #fff;
+}
+
+h2 {
+  margin-top: 15px;
+  color: #fff;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* === Site Title (Bacon Dev) === */
+.site-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: cyan;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+  /* Glow & Shadow */
+  text-shadow: 
+    0 0 10px white,
+    0 0 20px cyan,
+    0 0 40px cyan;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === Social Links === */
+.socials {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon {
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: #fff;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* 🎥 YouTube */
+.icon.youtube:hover {
+  background: #000;
+  color: #fff;
+  box-shadow: 0 0 15px red;
+  border: 2px solid red;
+}
+
+/* 🎵 TikTok */
+.icon.tiktok:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 15px black;
+  border: 2px solid black;
+}
+
+/* 🎮 Roblox */
+.icon.roblox:hover {
+  background: #000;
+  color: #fff;
+  box-shadow: 0 0 15px white;
+  border: 2px solid white;
+}
+
+/* 💬 Discord */
+.icon.discord:hover {
+  background: #000;
+  color: #fff;
+  box-shadow: 0 0 15px purple;
+  border: 2px solid purple;
+}
+
+
